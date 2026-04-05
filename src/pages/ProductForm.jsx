@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 
-const API = 'http://localhost:3000'
+const API = import.meta.env.VITE_API_URL
 const CATEGORIES = ['Camisetas', 'Pantalones', 'Zapatos', 'Accesorios']
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL']
 

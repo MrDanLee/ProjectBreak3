@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from 'react'
 
 const AuthContext = createContext()
 
-const API = 'http://localhost:3000'
+const API = import.meta.env.VITE_API_URL
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(localStorage.getItem('user') || null)
